@@ -1,9 +1,11 @@
 defmodule SulfurBackend do
-  @moduledoc """
-  SulfurBackend keeps the contexts that define your domain
-  and business logic.
+  use Supervisor
 
-  Contexts are also responsible for managing your data, regardless
-  if it comes from the database, an external API or others.
-  """
+  def start_link(opts) do
+    Supervisor.start_link(__MODULE__, :ok, opts)
+  end
+
+  def init(:ok) do
+     {:ok, %{}}
+  end
 end

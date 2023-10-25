@@ -19,6 +19,10 @@ defmodule SulfurBackendWeb do
 
   def static_paths, do: ~w(assets fonts images favicon.ico robots.txt)
 
+  def start_link(opts) do
+    SulfurBackend.start_link(__MODULE__, :ok, opts)
+  end
+
   def router do
     quote do
       use Phoenix.Router, helpers: false
