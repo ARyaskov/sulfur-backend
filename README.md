@@ -1,5 +1,8 @@
 # SulfurBackend
 
+🥇Elixir 1.15
+🥈Phoenix 1.7
+
 To start your Phoenix server:
 
   * Run `mix setup` to install and setup dependencies
