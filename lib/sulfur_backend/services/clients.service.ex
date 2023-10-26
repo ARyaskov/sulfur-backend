@@ -1,11 +1,10 @@
 defmodule SulfurBackend.ClientsService do
   def list_clients(args) do
-    clients = %{
-      res1: %{id: "1", firstName: "John", lastName: "Doe"},
-      res2: %{id: "2", firstName: "Alice", lastName: "Smith"},
-      res3: %{id: "3", firstName: "Bob", lastName: "Johnson"}
-
-    }
+    clients = [
+      %{id: "1", first_name: "John", last_name: "Doe"},
+      %{id: "2", first_name: "Alice", last_name: "Smith"},
+      %{id: "3", first_name: "Bob", last_name: "Johnson"}
+    ]
 
     clients
   end

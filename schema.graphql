@@ -1,0 +1,12 @@
+type Client {
+  id: String!
+  first_name: String!
+  last_name: String!
+}
+
+"""The root Query type that provides the entry point to the data graph."""
+type Query {
+  clients: [Client]!
+  "A simple root query"
+  root: String
+}

@@ -8,6 +8,7 @@ defmodule SulfurBackendWeb.Router do
   scope "/api/v0/graphql" do
     pipe_through :api
     forward "/clients", Absinthe.Plug, schema: SulfurBackendWeb.Schema
+
     forward "/graphiql", Absinthe.Plug.GraphiQL,
       schema: SulfurBackendWeb.Schema,
       interface: :simple,

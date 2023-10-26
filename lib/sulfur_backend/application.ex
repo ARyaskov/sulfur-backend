@@ -6,7 +6,7 @@ defmodule SulfurBackend.Application do
 
     children = [
       # supervisor(SulfurBackend.Repo, []),
-      supervisor(SulfurBackendWeb.Endpoint, []),
+      supervisor(SulfurBackendWeb.Endpoint, [])
     ]
 
     opts = [strategy: :one_for_one, name: SulfurBackend.Supervisor]

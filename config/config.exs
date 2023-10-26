@@ -14,7 +14,6 @@ config :sulfur_backend, SulfurBackendWeb.Endpoint,
   pubsub_server: SulfurBackend.PubSub,
   live_view: [signing_salt: "aMGyj2cP"]
 
-
 config :sulfur_backend, SulfurBackend.Mailer, adapter: Swoosh.Adapters.Local
 
 # Configure esbuild (the version is required)

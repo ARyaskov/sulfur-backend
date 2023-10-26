@@ -6,6 +6,6 @@ defmodule SulfurBackend do
   end
 
   def init(:ok) do
-     {:ok, %{}}
+    {:ok, %{}}
   end
 end
