@@ -5,6 +5,7 @@ defmodule SulfurBackend.Application do
     import Supervisor.Spec
 
     children = [
+      SulfurBackend.Repo,
       # supervisor(SulfurBackend.Repo, []),
       supervisor(SulfurBackendWeb.Endpoint, [])
     ]

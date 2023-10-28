@@ -1,11 +1,9 @@
-defmodule SulfurBackend.ClientsService do
-  def list_clients(args) do
-    clients = [
-      %{id: "1", first_name: "John", last_name: "Doe"},
-      %{id: "2", first_name: "Alice", last_name: "Smith"},
-      %{id: "3", first_name: "Bob", last_name: "Johnson"}
-    ]
+import Ecto.Query
 
-    clients
+defmodule SulfurBackend.ClientsService do
+  alias SulfurBackend.{Repo, ClientRepo}
+
+  def list_clients(args) do
+    Repo.all(from(c in ClientRepo, select: [:id, :first_name, :last_name]))
   end
 end
