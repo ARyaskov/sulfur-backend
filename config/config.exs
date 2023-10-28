@@ -3,6 +3,15 @@ import Config
 config :sulfur_backend,
   generators: [timestamp_type: :utc_datetime]
 
+config :sulfur_backend, ecto_repos: [SulfurBackend.Repo]
+
+config :sulfur_backend, SulfurBackend.Repo,
+  database: "sulfur",
+  username: "postgres",
+  password: "",
+  hostname: "localhost",
+  port: "5432"
+
 # Configures the endpoint
 config :sulfur_backend, SulfurBackendWeb.Endpoint,
   url: [host: "localhost"],
