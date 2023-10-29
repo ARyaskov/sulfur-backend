@@ -1,4 +1,6 @@
-# SulfurBackend
+# SulfurBackend ![Elixir Badge](https://img.shields.io/badge/Elixir-4B275F?logo=elixir&logoColor=fff&style=flat) ![Phoenix Framework Badge](https://img.shields.io/badge/Phoenix%20Framework-FD4F00?logo=phoenixframework&logoColor=fff&style=flat)
+
+
 
 🥇Elixir 1.15
 🥈Phoenix 1.7
